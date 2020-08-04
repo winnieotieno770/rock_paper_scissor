@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" type="text/css" href="main.css">
+   
+    
 </head>
 <body>
      <header>
-         <h1>Rock paper Scissors Game</h1>
+         <h2>Rock paper scissors game </h2>
+         <p>Press the button in any order you like five times</p>
      </header>
      <main>
-         <div class="score-box">
-             <span class="user">You</span>
-             <span id="score">0-0</span>
-             <span class="comp">Computer</span>
-         </div>
-         <div class = "buttons">
-             <button class="btn" value="" onclick=""></button>
-             <button class="btn" value="" onclick=""></button>
-             <button class="btn" value="" onclick=""></button>
-         </div>
-         <div class="challenge">
-              <div id="you">
-                <div id="myObj">h</div>
-              </div>
-               <div class ="result">You Win!</div>
-                <div id="comp">
-               <div class="compObj">c</div>
-               </div>
-
-
-         </div>
+    <div id= numbers>
+            <button data-target= 'rock'   class="choices">rock</button>
+            <button data-target="paper"  class="choices">paper</button>
+            <button data-target="scissor"  class="choices" >scissor</button>      
+    </div><br><br>
+    <div><h3>Computer choice</h3>
+        <div id="computer-choice"></div>
+    </div><br><br>
+    <div><h3>Your choice</h3>
+        <div id="your-choice"></div>
+    </div><br><br>
+    <div><h3>Results</h3>
+        <div id="result"></div>
+    </div>
      </main>
+     <script src="./main.js"></script>
 </body>
 </html>
